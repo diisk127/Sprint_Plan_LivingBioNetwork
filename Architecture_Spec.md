@@ -14,42 +14,28 @@
 
 ```mermaid
 graph TD
-    %% Node Definitions
-    subgraph External_Environment [Organic Waste & Energy]
-        Waste((Organic Matter))
-    end
+    %% Global Styling: พื้นหลังใส กรอบสีขาว ตัวหนังสือขาว
+    classDef bioNode fill:none,stroke:#ffffff,stroke-width:1.5px,color:#ffffff
 
-    subgraph Infrastructure_Layer [Physical Network]
-        N1[Bio-Router: Bacteria Hub A]
-        N2[Bio-Router: Bacteria Hub B]
-        N3[Bio-Router: Bacteria Hub C]
+    subgraph " "
+        direction TB
         
-        %% Edges as Mycelium
-        N1 -- "Mycelial Edge (Shortest Path)" --- N2
-        N2 -- "Mycelial Edge (Signal Diffusion)" --- N3
-        N3 -- "Mycelial Edge (Self-Healing)" --- N1
+        %% Nodes ตามลำดับในรูปของคุณ
+        N1[Reality Integration Layer]:::bioNode
+        N2[Human Awareness Layer]:::bioNode
+        N3[Existence Communication Layer]:::bioNode
+        N4[Evolution Engine]:::bioNode
+        N5[Infrastructure Layer]:::bioNode
+
+        %% ลูกศรเชื่อมต่อแบบเส้นตรง (Straight Line)
+        N1 --> N2
+        N2 --> N3
+        N3 --> N4
+        N4 --> N5
     end
 
-    subgraph Evolution_Engine [Dynamic Optimization]
-        Algo{Physarum Algorithm}
-        DNA_Update[Genetic Firmware Update]
-    end
-
-    %% Connections
-    Waste -.->|Energy Supply| N1
-    Waste -.->|Energy Supply| N2
-    
-    Algo -->|Pathfinding| N1
-    Algo -->|Pathfinding| N2
-    
-    DNA_Update -->|Mutation Control| N1
-    DNA_Update -->|Mutation Control| N3
-
-    %% Communication Flow
-    Signal((Data Packet: DNA/Molecular)) --> N1
-    N1 -->|Action Potential| N2
-    N2 -->|Chemical Diffusion| N3
-
+    %% ปรับสไตล์ลูกศรเป็นสีแดงและหัวลูกศรคมๆ
+    linkStyle 0,1,2,3 stroke:#FF0000,stroke-width:2px
 ```
 ## 1. ส่วนพลังงาน (Organic Waste & Energy)
 
