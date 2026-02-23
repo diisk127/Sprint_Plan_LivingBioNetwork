@@ -11,3 +11,14 @@
 
 # ภาพรวมระบบแบบ Graph Algorithm
 #### นระบบนี้ จะมอง Node และ Edge ผ่านทฤษฎีกราฟที่ปรับแต่งด้วยกฎทางชีววิทยา:
+
+```mermaid
+graph TD
+A[Nodes (Biological Hubs)]
+B[Edges (Mycelial Pathways)]
+C[Algorithm (Dynamic Steiner Tree)]
+
+A --> B
+B --> C
+```
+
