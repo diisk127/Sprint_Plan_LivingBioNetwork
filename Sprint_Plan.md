@@ -86,7 +86,7 @@ Day 14: Sprint Review + Retrospective
 ### BA-01: BioNode Runtime Skeleton
 
 #### class BioNode:
-
+```python
     def __init__(self, node_id):
         self.node_id = node_id
         self.connected_nodes = []
@@ -101,7 +101,7 @@ Day 14: Sprint Review + Retrospective
 
     def receive(self, signal):
         print(f"[{self.node_id}] BioSignal received:", signal)
-
+```
 #### Acceptance Criteria:
 	•	BioNode สามารถ grow connection ได้
 	•	ส่งและรับ BioSignal ได้
@@ -110,7 +110,7 @@ Day 14: Sprint Review + Retrospective
 ### BA-02: BioNetworkState Model
 
 #### class BioNetworkState:
-
+```python
     def __init__(self):
         self.nodes = {}
         self.fibers = []
@@ -124,6 +124,7 @@ Day 14: Sprint Review + Retrospective
             "target": target,
             "density": density
         })
+```
 
 #### Acceptance Criteria:
 	•	เพิ่ม Node ได้
@@ -132,24 +133,24 @@ Day 14: Sprint Review + Retrospective
 
 
 ### BA-03: Adaptive Bio Routing
-
+```python
 def select_healthiest_fiber(fibers):
     return max(fibers, key=lambda f: f["density"])
-
+```
 #### Acceptance Criteria:
 	•	เลือก fiber ที่ density สูงสุด
 	•	รองรับหลายเส้นทาง
 
 
 ### BA-04: Bio Logging Module
-
+```python
 import logging
 
 logging.basicConfig(level=logging.INFO)
 
 def log_bio_event(event):
     logging.info("[BIO EVENT] " + event)
-
+```
 #### Acceptance Criteria:
 	•	Log แสดงสถานะ growth และ signal
 	•	ไม่กระทบ simulation
