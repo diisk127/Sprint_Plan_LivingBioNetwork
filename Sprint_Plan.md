@@ -165,19 +165,21 @@ def log_bio_event(event):
 
 ## 4.5 Non-Functional Requirements (Sprint Alpha)
 
-Category	Requirement
-Stability	Node failure ไม่ทำให้ network collapse
-Scalability	รองรับ ≥ 100 simulated BioNodes
-Performance	Signal propagation ≤ 300ms
+|Category	|Requirement|
+|----------|----------------------|
+|Stability	|Node failure ไม่ทำให้ network collapse|
+|Scalability|	รองรับ ≥ 100 simulated BioNodes|
+|Performance	|Signal propagation ≤ 300ms|
 
 
 
 ## 4.6 Risks During Sprint Alpha
 
-Risk	Impact	Mitigation
-Signal broadcast loop	High	Add visited tracking
-Density miscalculation	Medium	Add unit test
-Simulation lag	Medium	Limit scaling
+|Risk|	Impact|	Mitigation|
+|----------|----------------------|------------|
+|Signal broadcast loop|	High|	Add visited tracking|
+|Density miscalculation|	Medium|	Add unit test|
+|Simulation lag|	Medium|	Limit scaling|
 
 
 
@@ -187,7 +189,6 @@ Simulation lag	Medium	Limit scaling
 	•	Unit Test Suite
 	•	Sprint Alpha Demo
 
-⸻
 
 # 5. Sprint Beta – Evolution Engine
 
