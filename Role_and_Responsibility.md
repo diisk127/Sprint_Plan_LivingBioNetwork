@@ -121,9 +121,35 @@ Gemini said
 
 #### Final escalation authority: Product Owner & System Architect
 
+## 5. Collaboration Rules
+* Daily Bio-Pulse (Standup): ประชุมอัปเดตสถานะงานสั้นๆ 10–15 นาที เพื่อติดตามความคืบหน้าของแต่ละ Layer และกำจัดปัญหาคอขวด (Blockers) ก่อนเริ่มงานวันถัดไป
 
+* Bi-Weekly Network Review: จัดการสาธิต (Demo) และสรุปความสำเร็จของเครือข่าย เช่น อัลกอริทึมการเติบโตหรือโครงสร้าง DNA ทุกสิ้นสุดรอบ Sprint 2 สัปดาห์
 
+* Core-Protocol Peer Review: การแก้ไขเนื้อหาสำคัญในสายหลัก (Main Branch) ต้องได้รับการตรวจสอบและยืนยันความถูกต้องอย่างน้อย 1 Approval เพื่อรักษาเสถียรภาพของสถาปัตยกรรม
 
+* Architecture Guardrail: การปรับเปลี่ยนกลไกหลักของระบบ (เช่น การแก้ไขโปรโตคอลการสื่อสารโมเลกุล) ต้องผ่านการเห็นชอบจาก System Architect ก่อนทำการแก้ไข
+
+Real-time Documentation Sync: เมื่อมีการอัปเดต Evolution Engine หรือส่วนโครงสร้างพื้นฐาน ต้องทำการบันทึกข้อมูลลงใน GitHub ทันที เพื่อให้ทีมเข้าถึงข้อมูลทางเทคนิคล่าสุดได้
+
+## 6. Accountability Matrix (RACI Model)
+
+| Task | Architect | Backend | Biotech | Scrum Master | PO |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Architecture Design** | R | C | C | I | A |
+| **Protocol Implementation** | C | R | C | I | I |
+| **Biological Growth Logic** | C | C | R | I | I |
+| **Sprint Management** | I | I | I | R | C |
+| **Documentation** | C | I | I | R | I |
+
+**Legend:**
+* **R** = Responsible (ผู้ลงมือทำหลัก)
+* **A** = Accountable (ผู้อนุมัติและรับผิดชอบผลลัพธ์)
+* **C** = Consulted (ผู้ให้คำปรึกษาหรือให้ข้อมูล)
+* **I** = Informed (ผู้รับทราบความคืบหน้า)
+
+## 7. Commitment Statement
+ทีมงาน Living Bio Network (LEN) ยืนยันว่าจะปฏิบัติหน้าที่ตามบทบาทที่ได้รับมอบหมายอย่างเต็มความสามารถ และร่วมกันพัฒนาโครงสร้างเครือข่ายชีวภาพให้สำเร็จตามเป้าหมายของแต่ละ Sprint ที่กำหนดไว้
 
 
 
