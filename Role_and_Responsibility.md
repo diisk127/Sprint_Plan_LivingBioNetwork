@@ -30,18 +30,18 @@ Methodology : Agile Scrum
 ---
 
 ## 3. Responsibility Breakdown by Layer
-### 3.1 Human Awareness & Reality Integration Layer
+### 3.1 Product Owner และ System Architect
 #### 
 
 ผู้รับผิดชอบหลัก: Product Owner และ System Architect
 
 หน้าที่:
 
-* ออกแบบการแสดงผล (Eco-Feedback) เพื่อให้มนุษย์เข้าใจสถานะของเครือข่ายชีวภาพผ่านประสาทสัมผัส
+* ออกแบบการแสดงผล (Dashboard/Visualization) เพื่อให้ผู้ใช้เข้าใจสถานะของเครือข่ายจำลอง
 
-* พัฒนารูปแบบการโต้ตอบ (Biometric Interface) เช่น การใช้ความร้อนหรือความชื้นจากร่างกายเพื่อป้อนข้อมูลเข้าสู่ระบบ
+* พัฒนารูปแบบการโต้ตอบและรับข้อมูล (Interface) จากสภาพแวดล้อมเข้าสู่ระบบดิจิทัล
 
-*  ตรวจสอบความถูกต้องของการนำข้อมูลจากโลกแห่งความเป็นจริงเข้าสู่โครงสร้างเครือข่าย
+* ตรวจสอบความถูกต้องของการนำข้อมูลจากโลกภายนอกเข้าสู่โครงสร้างเครือข่าย
 
 ### 3.2 Existence Communication Layer
 
@@ -56,27 +56,27 @@ Methodology : Agile Scrum
 * จัดการระบบการเข้ารหัสชีวภาพ (Biological Encryption) เพื่อความปลอดภัยของข้อมูล
 
 ### 3.3 Evolution Engine
-ผู้รับผิดชอบหลัก: Backend Engineer และ Biotechnical Specialist
+ผู้รับผิดชอบหลัก: Backend Engineer และ Quality Assurance (QA)
 
 หน้าที่:
 
-* พัฒนาอัลกอริทึมการงอกใหม่ (Adaptive Growth) เพื่อให้เครือข่ายหาเส้นทางใหม่ได้เองเมื่อสายใยราขาด
+* พัฒนาและทดสอบอัลกอริทึมการหาเส้นทางใหม่ (Adaptive Routing) เมื่อการเชื่อมต่อขาดหาย
 
-* ออกแบบระบบ Logic สำหรับการ Update Firmware ผ่านกระบวนการส่งโปรตีนหรือตัดต่อยีนแบคทีเรีย
+* ออกแบบและตรวจสอบ Logic ของการอัปเดตระบบ (Firmware Update Logic) ผ่านเครือข่ายจำลอง
 
-* ควบคุมพฤติกรรมการตัดสินใจของระบบเมื่อเจอสิ่งเร้าจากสภาพแวดล้อมที่เปลี่ยนแปลง
+* QA: ทำการจำลองสถานการณ์ (Scenario Testing) เพื่อดูพฤติกรรมการตัดสินใจของระบบ
 
-### 3.4 Infrastructure Layer
+### 3.4 Infrastructure & Quality Layer
 
-ผู้รับผิดชอบหลัก: Biotechnical Specialist
+ผู้รับผิดชอบหลัก: Quality Assurance (QA)
 
 หน้าที่:
 
-* จัดเตรียมและควบคุมคุณภาพของ Substrate (ฐานสารอาหาร) เพื่อให้สายใยราเติบโตได้อย่างมั่นคง
+* System Integrity: ตรวจสอบความเสถียรของระบบจำลอง Node และประสิทธิภาพการประมวลผล
 
-* ติดตั้งและตั้งค่า Bio-Sensors เพื่อแปลงสัญญาณทางเคมีและไฟฟ้าชีวภาพให้เป็นข้อมูลดิจิทัล
+* Bug Tracking: ค้นหาและรายงานข้อผิดพลาดของระบบก่อนการ Deploy งานในแต่ละ Sprint
 
-* ดูแลความปลอดภัยทางชีวภาพ (Bio-containment) ไม่ให้เครือข่ายแพร่กระจายจนควบคุมไม่ได้
+* Compliance: ควบคุมมาตรฐานของโค้ดและโครงสร้างข้อมูลให้เป็นไปตามที่ Architect ออกแบบไว้
 
 ### 3.5 Documentation & Quality Control
 
@@ -91,33 +91,22 @@ Methodology : Agile Scrum
 * บันทึกปัญหาและอุปสรรค (Retrospective) เพื่อปรับปรุงกระบวนการทำงานใน Sprint ถัดไป
 
 
-Gemini said
-เข้าใจแล้วครับ คุณต้องการแปลงเนื้อหาความรับผิดชอบในแต่ละ Layer (4.1 - 4.4) ให้กลายเป็น Decision & Escalation Flow แบบรายการข้อ 1-5 ตามตัวอย่างในรูปภาพสุดท้ายที่คุณส่งมา
-
-นี่คือเนื้อหาที่ปรับให้เป็นรูปแบบโฟลว์สำหรับโปรเจกต์ Living Bio Network ครับ:
-
 ## 4. Decision & Escalation Flow
 #### 
+* Reality Integration & Feedback Issue → Product Owner
+(ปัญหาด้านการแสดงผลและส่วนต่อประสานผู้ใช้งาน)
 
-1. Reality Integration & Feedback Issue → Product Owner
+* Data Protocol & Encryption Conflict → System Architect
+(ปัญหาด้านการรับส่งข้อมูลและการเข้ารหัสระบบ)
 
-   สำหรับปัญหาด้านการแสดงผล Eco-Feedback และส่วนต่อประสาน Biometric Interface
+* Adaptive Routing & Logic Error → Backend Engineer
+(ปัญหาด้านตรรกะการทำงานและการประมวลผลหลังบ้าน)
 
-2. Molecular Protocol & Encryption Conflict → System Architect
+* System Stability & Test Failure → Quality Assurance (QA)
+(ปัญหาด้านความเสถียร บัค และผลการทดสอบที่ไม่ผ่านเกณฑ์)
 
-   สำหรับปัญหาด้านการรับส่งข้อมูลผ่านโมเลกุลและการเข้ารหัสด้วยยีน (Biological Encryption)
-
-3. Adaptive Growth & Evolution Logic Error → Backend Engineer
-
-   สำหรับปัญหาด้านตรรกะการปรับตัวของระบบและกลไกการวิวัฒนาการทางพันธุกรรม
-
-4. Substrate & Bio-Sensor Failure → Biotechnical Specialist
-
-   สำหรับปัญหาด้านโครงสร้างพื้นฐานทางชีวภาพ สารอาหาร และเซ็นเซอร์ตรวจจับสัญญาณ
-
-5. Documentation & Quality Approval → Scrum Master 
-
-   สำหรับการอนุมัติเอกสาร Technical Spec และการตรวจสอบคุณภาพงานในแต่ละ Sprint
+* Process & Quality Approval → Scrum Master
+(การอนุมัติเอกสารและการตรวจสอบมาตรฐานการทำงานในทีม)
 
 #### Final escalation authority: Product Owner & System Architect
 
@@ -130,17 +119,19 @@ Gemini said
 
 * Architecture Guardrail: การปรับเปลี่ยนกลไกหลักของระบบ (เช่น การแก้ไขโปรโตคอลการสื่อสารโมเลกุล) ต้องผ่านการเห็นชอบจาก System Architect ก่อนทำการแก้ไข
 
-Real-time Documentation Sync: เมื่อมีการอัปเดต Evolution Engine หรือส่วนโครงสร้างพื้นฐาน ต้องทำการบันทึกข้อมูลลงใน GitHub ทันที เพื่อให้ทีมเข้าถึงข้อมูลทางเทคนิคล่าสุดได้
+* Real-time Documentation Sync: เมื่อมีการอัปเดต Evolution Engine หรือส่วนโครงสร้างพื้นฐาน ต้องทำการบันทึกข้อมูลลงใน GitHub ทันที เพื่อให้ทีมเข้าถึงข้อมูลทางเทคนิคล่าสุดได้
 
 ## 6. Accountability Matrix (RACI Model)
 
-| Task | Architect | Backend | Biotech | Scrum Master | PO |
+### 6. Accountability Matrix (RACI Model)
+
+| Task | Architect | Backend | QA | Scrum Master | PO |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Architecture Design** | R | C | C | I | A |
-| **Protocol Implementation** | C | R | C | I | I |
-| **Biological Growth Logic** | C | C | R | I | I |
-| **Sprint Management** | I | I | I | R | C |
-| **Documentation** | C | I | I | R | I |
+| **Architecture Design** | **A** | R | C | I | I |
+| **Protocol Implementation** | C | **A** | R | I | I |
+| **System Logic & Bug Testing** | I | C | **A** | R | I |
+| **Sprint Management** | I | I | I | **A** | R |
+| **Documentation & Quality** | C | I | R | **A** | I |
 
 **Legend:**
 * **R** = Responsible (ผู้ลงมือทำหลัก)
