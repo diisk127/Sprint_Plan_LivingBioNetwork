@@ -67,11 +67,11 @@ BioNode → ระบบเครือข่าย → ระบบหาเส
 
 | ส่วนของระบบ | ผล | หมายเหตุ |
 |:---|:---:|:---|
-| Infrastructure Layer | ✅ ผ่าน | BioNode ออกแบบชัดเจน พร้อมพัฒนา |
-| Evolution Engine | ⚠️ ผ่านมีเงื่อนไข | ต้องกำหนดค่า Threshold ให้ชัดก่อน |
-| Existence Communication Layer | ✅ ผ่าน | โครงสร้างข้อมูลครบถ้วน |
-| Structural Privacy Layer | ✅ ผ่าน | ระบบ Genetic Key ออกแบบดี |
-| Human Awareness Layer | ⚠️ ผ่านมีเงื่อนไข | ต้องออกแบบ Interface ให้ละเอียดขึ้น |
+| Infrastructure Layer |  ผ่าน | BioNode ออกแบบชัดเจน พร้อมพัฒนา |
+| Evolution Engine |  ผ่านมีเงื่อนไข | ต้องกำหนดค่า Threshold ให้ชัดก่อน |
+| Existence Communication Layer |  ผ่าน | โครงสร้างข้อมูลครบถ้วน |
+| Structural Privacy Layer |  ผ่าน | ระบบ Genetic Key ออกแบบดี |
+| Human Awareness Layer |  ผ่านมีเงื่อนไข | ต้องออกแบบ Interface ให้ละเอียดขึ้น |
 
 ### 3.2 สิ่งที่ต้องแก้ก่อนเริ่ม Sprint Beta
 
