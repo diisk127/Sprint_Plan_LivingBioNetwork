@@ -3,7 +3,6 @@
 
 **Version:** 1.0
 **Sprint:** Alpha
-**ผู้จัดทำ:** นายภควัฒน์ สุขมณี (System Architect)
 **รายวิชา:** CP352005 Networks
 
 ---
