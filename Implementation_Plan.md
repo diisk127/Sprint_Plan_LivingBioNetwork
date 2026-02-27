@@ -4,7 +4,7 @@
 **Version:** 1.0
 **Sprint:** Alpha
 **Methodology:** Agile Scrum
-**Author:** นายธนนันต์ สาวิกัน (Scrum Master)
+**Author:** นางสาวกวินธิดา อนุนิวัฒน์
 
 ---
 
@@ -69,11 +69,11 @@ BioNode → BioNetworkState → Adaptive Routing → Communication Layer → Pri
 
 | Layer | สถานะ | ข้อสังเกต |
 |:---|:---:|:---|
-| Infrastructure Layer | ✅ ผ่าน | BioNode และ Sensor ออกแบบชัดเจน |
-| Evolution Engine | ⚠️ ผ่านมีเงื่อนไข | ต้องกำหนดค่า THRESHOLD และ OPTIMAL_LEVEL |
-| Existence Communication Layer | ✅ ผ่าน | ExistencePacket Schema ครบถ้วน |
-| Structural Privacy Layer | ✅ ผ่าน | Genetic Key Encryption ออกแบบดี |
-| Human Awareness Layer | ⚠️ ผ่านมีเงื่อนไข | Biometric Interface ต้องระบุให้ชัดเจนขึ้น |
+| Infrastructure Layer |  ผ่าน | BioNode และ Sensor ออกแบบชัดเจน |
+| Evolution Engine |  ผ่านมีเงื่อนไข | ต้องกำหนดค่า THRESHOLD และ OPTIMAL_LEVEL |
+| Existence Communication Layer |  ผ่าน | ExistencePacket Schema ครบถ้วน |
+| Structural Privacy Layer |  ผ่าน | Genetic Key Encryption ออกแบบดี |
+| Human Awareness Layer |  ผ่านมีเงื่อนไข | Biometric Interface ต้องระบุให้ชัดเจนขึ้น |
 
 ### 3.2 สิ่งที่ต้องแก้ไขก่อนเริ่ม Sprint Beta
 
@@ -84,16 +84,16 @@ BioNode → BioNetworkState → Adaptive Routing → Communication Layer → Pri
 ### 3.3 การตัดสินใจสำคัญ
 
 **การตัดสินใจที่ 1: ภาษาที่ใช้พัฒนา**
-ใช้ Python เพราะทีมคุ้นเคย พัฒนาได้เร็ว รองรับ Graph และ Simulation ได้ดี — ✅ ตกลงแล้ว
+ใช้ Python เพราะทีมคุ้นเคย พัฒนาได้เร็ว รองรับ Graph และ Simulation ได้ดี —  ตกลงแล้ว
 
 **การตัดสินใจที่ 2: โครงสร้างข้อมูล BioNode**
-ใช้ Dictionary สำหรับ connected_nodes เพื่อให้ค้นหาได้เร็วกว่า List — ✅ ตกลงแล้ว
+ใช้ Dictionary สำหรับ connected_nodes เพื่อให้ค้นหาได้เร็วกว่า List —  ตกลงแล้ว
 
 **การตัดสินใจที่ 3: วิธี Routing**
-ใช้ Greedy Algorithm เลือก Fiber ที่ Density สูงสุดใน Sprint Alpha ก่อน แล้วค่อยพัฒนาเป็น Dijkstra ใน Sprint Beta — ✅ ตกลงแล้ว
+ใช้ Greedy Algorithm เลือก Fiber ที่ Density สูงสุดใน Sprint Alpha ก่อน แล้วค่อยพัฒนาเป็น Dijkstra ใน Sprint Beta —  ตกลงแล้ว
 
 **การตัดสินใจที่ 4: Encryption**
-ใช้ Genetic Key แบบ String Matching ใน Sprint Alpha เพื่อให้ง่ายก่อน แล้วค่อยเพิ่มความซับซ้อนใน Sprint Delta — ✅ ตกลงแล้ว
+ใช้ Genetic Key แบบ String Matching ใน Sprint Alpha เพื่อให้ง่ายก่อน แล้วค่อยเพิ่มความซับซ้อนใน Sprint Delta —  ตกลงแล้ว
 
 ---
 
