@@ -6,7 +6,7 @@ from evolution_engine import NetworkState, evolve_network
 from security import BiologicalEncryption
 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder=".")
 
 # ใช้ state เดียวกันในทุก request (จำลองระบบที่รันต่อเนื่อง)
 bio_infra = BioInfrastructure()
