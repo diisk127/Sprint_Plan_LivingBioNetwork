@@ -1,3 +1,4 @@
+```python
 import random
 from bio_infrastructure import BioInfrastructure
 from evolution_engine import evolve_network, NetworkState
@@ -36,3 +37,4 @@ def run_terminal():
 
 if __name__ == "__main__":
     run_terminal()
+```
