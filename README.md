@@ -44,7 +44,7 @@
 
 
 
-
+# โค้ดตัวอย่าง main.py
 
 ```python
 import random
